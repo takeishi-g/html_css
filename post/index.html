@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="riset.css" />
+    <link rel="stylesheet" href="../riset.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Croissant+One&display=swap"
@@ -15,14 +15,23 @@
       rel="stylesheet"
     />
   </head>
+  
   <body class="post">
     <header class="header">
       <div class="header-container">
-        <p><strong>ヘッダーコンテナ</strong></p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-        beatae atque iure laboriosam harum fugit sequi optio possimus maxime
-        molestiae? Reprehenderit harum optio odio non dicta quod fugiat in!
-        Numquam!
+        <div class="sitetitle">
+          <h1 class="header-logo"><a href="index.html"><img src="../images/header-logo.svg" alt=""></a></h1>
+          <div class="navbtn"></div>
+        </div>
+        <nav>
+          <ul class="header-nav collapse">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="post.html">最新の特集</a></li>
+            <li><a href="#">地域別に読む</a></li>
+            <li><a href="#">連載一覧</a></li>
+            <li><a href="#">インタビュー</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -52,7 +61,7 @@
             <span><i class="fas fa-clock"></i>2020.6.16</span>
           </div>
           <div class="post-headerimage">
-            <img src="images/post-headerimage.jpg" alt="" />
+            <img src="../images/post-headerimage.jpg" alt="" />
           </div>
         </div>
         <div class="post-contents">
@@ -73,7 +82,7 @@
           </p>
 
           <figure class="photo-caption">
-            <img src="images/post-photo1.jpg" alt="" />
+            <img src="../images/post-photo1.jpg" alt="" />
             <figcaption>
               グリルとフレッシュ、野菜の味の深みが変わってどちらも楽しめた
             </figcaption>
@@ -98,7 +107,7 @@
 
           <h2>帰り道に見つけたカフェで出会った「地元」の情報</h2>
           <div class="float-box">
-            <img src="images/post-photo2.jpg" alt="" class="float-right" />
+            <img src="../images/post-photo2.jpg" alt="" class="float-right" />
             <p>
               ファーマーズマーケットから市の中心街に移動する道でカフェを見つけた。歩き回ってちょっと疲れたしコーヒーでも飲んで休憩することにしよう。
             </p>
@@ -110,7 +119,7 @@
           <div class="chat">
             <div class="chat-1st">
               <div class="face">
-                <img src="images/speaker1.jpg" alt="">
+                <img src="../images/speaker1.jpg" alt="">
               </div>
               <div class="talk">
                 <p>学校で仕事をしているんですか？</p>
@@ -118,7 +127,7 @@
             </div>
             <div class="chat-2nd">
               <div class="face">
-                <img src="images/speaker2.jpg" alt="">
+                <img src="../images/speaker2.jpg" alt="">
               </div>
               <div class="talk">
                 <p>いいえ。子供向けの博物館で、ワークショップの運営をしています。</p>
@@ -127,7 +136,7 @@
           </div>
             <div class="chat-1st">
               <div class="face">
-                <img src="images/speaker1.jpg" alt="">
+                <img src="../images/speaker1.jpg" alt="">
               </div>
               <div class="talk">
                 <p>え？子供向け専用の博物館がサンフランシスコにあるんですか？</p>
@@ -135,7 +144,7 @@
             </div>
             <div class="chat-2nd">
               <div class="face">
-                <img src="images/speaker2.jpg" alt="">
+                <img src="../images/speaker2.jpg" alt="">
               </div>
               <div class="talk">
                 <p>いくつかありますよ。私が働いているのは、コンピューターを使ったいろいろなクリエイティブ活動ができる小さな博物館です。地域の子供たちでいつもにぎわっていますよ。</p>
@@ -143,7 +152,7 @@
             </div>
             <div class="chat-1st">
               <div class="face">
-                <img src="images/speaker1.jpg" alt="">
+                <img src="../images/speaker1.jpg" alt="">
               </div>
               <div class="talk">
                 <p>それは特に面白そう！とても興味があります。大人も入れるんですか？</p>
@@ -151,7 +160,7 @@
             </div>
             <div class="chat-2nd">
               <div class="face">
-                <img src="images/speaker2.jpg" alt="">
+                <img src="../images/speaker2.jpg" alt="">
               </div>
               <div class="talk">
                 <p>もちろんです。絵を描いたりアニメーションを作ったりロボットを操作したり楽しい体験がたくさんできますからぜひ訪れてみてくださいね。</p>
@@ -167,7 +176,7 @@
           <h2><i class="fas fa-pen-fancy">Profile</i></h2>
           <div class="profile">
             <div class="pr-photo">
-              <img src="images/writer.jpg" alt="">
+              <img src="../images/writer.jpg" alt="">
             </div>
             <div class="pr-text">
               <p><strong>桑山みなと</strong><br>
@@ -198,5 +207,7 @@
         Provident, expedita?
       </div>
     </footer>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

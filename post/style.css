@@ -10,8 +10,63 @@ h1, h2, h3, h4, h5, h6, th, strong {
 }
 
 .header {
-  background: url(./images/header-topline.svg) repeat-x;
+  background: url(../images/header-topline.svg) repeat-x;
   border-bottom: 1px solid #d8d8d8;
+}
+
+.sitetitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.header-logo img {
+  width: 130px;
+}
+
+.navbtn {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url(../images/nav-mobile-open.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.navbtn.close {
+  background-image: url(../images/nav-mobile-close.svg);
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+}
+
+.header-nav.collapse {
+  display: none;
+}
+
+.header-nav li a{
+  display: block;
+  padding: 20px 30px;
+  border-top: 1px solid #d8d8d8;
+  background: #efefef;
+  color: #000;
+  text-decoration: none;
+}
+
+.header-nav li a:hover {
+  background: #d8e5ea;
 }
 
 .breadcrumb {
@@ -19,7 +74,7 @@ h1, h2, h3, h4, h5, h6, th, strong {
 }
 
 .page-bottom {
-  background: url(./images/bottom-bg.svg);
+  background: url(../images/bottom-bg.svg);
 }
 
 .bottom-container {
@@ -31,9 +86,9 @@ h1, h2, h3, h4, h5, h6, th, strong {
 }
 
 
-.post .main-container {
+.post.main-container {
   padding: 80px 4% 0 4%;
-  background: url(./images/post-bg.svg) repeat-x;
+  background: url(../images/post-bg.svg) repeat-x;
   background-position: 0 10px;
 }
 
@@ -70,7 +125,7 @@ h1, h2, h3, h4, h5, h6, th, strong {
   padding-bottom: 15px;
   font-size: .75rem;
   text-align: right;
-  background: url(./images/post-line.svg) bottom repeat-x ;
+  background: url(../images/post-line.svg) bottom repeat-x ;
 }
 
 .post-info span {
@@ -245,6 +300,41 @@ h1, h2, h3, h4, h5, h6, th, strong {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 1040px;
+  }
+
+  .sitetitle {
+    display: block;
+    padding: 30px 0 0 0;
+  }
+
+  .header-logo {
+    padding: 0;
+  }
+
+  .header-logo img {
+    width: 180px;
+  }
+
+  .navbtn {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .header-nav li a{
+    padding: 6px 20px 2px 20px;
+    border-top: none;
+    border-bottom: 4px solid transparent;
+    background: none;
+  }
+
+  .header-nav li a:hover {
+    border-bottom: 4px solid #73cdb6;
+    background: none;
   }
 
   .breadcrumb {
