@@ -3,6 +3,7 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
+  padding: 12px;
 }
 
 h1, h2, h3, h4, h5, h6, th, strong {
@@ -346,6 +347,38 @@ h1, h2, h3, h4, h5, h6, th, strong {
     margin: 0 auto;
     padding: 12px 20px;
     max-width: 1040px;
+  }
+
+  .bc-nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .bc-nav li {
+    font-size: .75rem;
+    color: #747474;
+  }
+
+  .bc-nav li::after {
+    padding: 0 5px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+  }
+
+  .bc-nav li:last-child::after {
+    content: "";
+  }
+
+  .bc-nav li a {
+    color: #747474;
+  }
+
+  .bc-nav li a:hover {
+    opacity: .8;
   }
 
   .bottom-container {
