@@ -17,16 +17,16 @@
   </head>
   
   <body class="post">
-    <header class="header">
+    <header class="header" id="top">
       <div class="header-container">
         <div class="sitetitle">
           <h1 class="header-logo"><a href="index.html"><img src="../images/header-logo.svg" alt=""></a></h1>
           <div class="navbtn"></div>
         </div>
         <nav>
-          <ul class="header-nav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="post.html">最新の特集</a></li>
+          <ul class="header-nav collapse">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../post">最新の特集</a></li>
             <li><a href="#">地域別に読む</a></li>
             <li><a href="#">連載一覧</a></li>
             <li><a href="#">インタビュー</a></li>
@@ -190,21 +190,39 @@
 
     <div class="page-bottom">
       <div class="bottom-container">
-        <p><strong>ページ下部コンテナ</strong></p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam
-        illo, est repellendus mollitia veritatis quasi numquam deserunt
-        consectetur ducimus beatae nisi at rerum, officia cupiditate saepe qui
-        voluptatum. Tempore.
+       <div class="banner">
+        <div><a href="#"><img src="../images/banner-1.png" alt=""></a></div>
+        <div><a href="#"><img src="../images/banner-2.png" alt=""></a></div>
+       </div>
+       <h2 class="followus">Follow Us!</h2>
+       <div class="sns">
+        <div><a href="#"><i class="fab fa-twitter"></i></a></div>
+        <div><a href="#"><i class="fab fa-facebook"></i></a></div>
+        <div><a href="#"><i class="fab fa-instagram"></i></a></div>
+       </div>
+       <div class="gotop">
+        <a href="#top"><i class="fas fa-chevron-up"></i></a>
+       </div>
       </div>
     </div>
 
     <footer class="footer">
       <div class="footer-container">
-        <p><strong>フッターコンテナ</strong></p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sint
-        magni voluptates illum dolor eos reprehenderit dolorem ipsam. Quam
-        magnam iure laudantium molestiae ullam voluptatibus, qui repellat quis!
-        Provident, expedita?
+        <div class="footer-logo">
+          <a href="index.html"><img src="../images/footer-logo.svg" alt="Tansaku!"></a>
+        </div>
+        <ul class="footer-nav1">
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../post">最新の特集</a></li>
+          <li><a href="#">地域別に読む</a></li>
+          <li><a href="#">連載一覧</a></li>
+          <li><a href="#">インタビュー</a></li>
+        </ul>
+        <ul class="footer-nav2">
+          <li><a href="#">このサイトについて</a></li>
+          <li><a href="#">運営会社</a></li>
+        </ul>
+        <p class="copyright">&copy; Tansaku! All rights reserved.</p>
       </div>
     </footer>
     <script src="../js/jquery-3.6.0.min.js"></script>
